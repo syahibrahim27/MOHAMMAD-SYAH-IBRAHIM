@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author User
+ */
+import java.util.Scanner;
+
+public class SegitigaSamaSisi {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Meminta input dari user untuk panjang alas segitiga
+        System.out.print("Masukkan panjang alas segitiga: ");
+        int alas = scanner.nextInt();
+
+        // Menghitung tinggi segitiga dari panjang alas
+        int tinggi = (alas + 1) / 2;
+
+        // Membuat segitiga sama sisi
+        for (int i = 1; i <= tinggi; i++) {
+            // Mencetak spasi kosong di awal tiap baris
+            for (int j = i; j < tinggi; j++) {
+                System.out.print(" ");
+            }
+            // Mencetak bintang untuk segitiga
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();  // Pindah baris setelah selesai mencetak satu baris bintang
+        }
+
+        scanner.close();
+    }
+}
