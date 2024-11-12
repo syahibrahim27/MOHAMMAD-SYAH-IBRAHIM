@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package syahibrah;
+
+/**
+ *
+ * @author User
+ */
+
+
+public class Muzzaki {
+    private double totalWealth; // Property to store wealth amount
+
+    // Constructor with parameter for total wealth
+    public Muzzaki(double totalWealth) {
+        this.totalWealth = totalWealth;
+    }
+
+    // Getter for totalWealth
+    public double getTotalWealth() {
+        return totalWealth;
+    }
+
+    // Setter for totalWealth
+    public void setTotalWealth(double totalWealth) {
+        this.totalWealth = totalWealth;
+    }
+
+    // Method to calculate zakat (2.5% of total wealth)
+    public double calculateZakat() {
+        return totalWealth * 0.025;
+    }
+}
+
